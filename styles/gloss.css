@@ -1,0 +1,50 @@
+.gloss {
+  position: relative;
+  margin-block: 1em;
+  margin-inline-start: 3em;
+  list-style: none;
+}
+
+.gloss::before {
+  counter-increment: gloss;
+  content: "(" counter(gloss) ")";
+
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 3em;
+  padding-right: 1em;
+  text-align: right;
+}
+
+.gloss ol {
+  margin-block: 0;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+.gloss li {
+  margin-block: 0;
+}
+
+.gloss .gloss-body {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1em;
+}
+
+.gloss .gloss-word-text:not(:has(+ .gloss-word-transliteration)),
+.gloss .gloss-word-transliteration {
+  font-style: italic;
+}
+
+.gloss .gloss-word-transliteration,
+.gloss .gloss-word-gloss {
+  font-size: 0.875em;
+}
+
+.gloss .gloss-header,
+.gloss .gloss-footer {
+  margin-block: 0;
+}

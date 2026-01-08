@@ -1,13 +1,58 @@
 {
   "name": "remark-interlinear-gloss",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Interlinear glossing with Markdown using remark-directive",
+  "author": "Daniel Huang <99danielh@gmail.com> (https://dan.onl)",
+  "bugs": "https://github.com/cubedhuang/remark-interlinear-gloss/issues",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./styles/gloss.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.13.1"
+  "files": [
+    "./dist",
+    "./styles"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "keywords": [
+    "interlinear",
+    "gloss",
+    "linguistics",
+    "conlang",
+    "markdown",
+    "remark",
+    "remark-plugin",
+    "plugin",
+    "unified",
+    "mdast"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "mdast-util-directive": "^3.1.0",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-directive": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "remark-stringify": "^11.0.0",
+    "to-vfile": "^8.0.0",
+    "typescript": "^5.9.3",
+    "unist-util-remove-position": "^5.0.0",
+    "vfile": "^6.0.3"
+  },
+  "peerDependencies": {
+    "remark-directive": "^4.0.0"
+  }
 }
