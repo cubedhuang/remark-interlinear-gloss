@@ -1,7 +1,7 @@
 <!-- omit in toc -->
 # remark-interlinear-gloss
 
-**[remark][]** plugin to support [interlinear glossing](https://www.eva.mpg.de/lingua/resources/glossing-rules.php) for linguistics.
+**[remark][]** plugin to support [interlinear glossing](https://www.eva.mpg.de/lingua/resources/glossing-rules.php) for linguistics in Markdown.
 
 ```markdown
 :::gloss
