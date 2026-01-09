@@ -8,7 +8,7 @@
 | Chinese coverbs
 我 **坐** 飞机 **从** 上海 **到** 北京 去。
 / wǒ **zuò** fēijī **cóng** Shànghǎi **dào** Běijīng qù.
-= I **sit** airplace **from** Shanghai **arrive(to)** Beijing go
+= I **sit** airplane **from** Shanghai **arrive.at** Beijing go
 | 'I'll go from Shanghai to Beijing by plane.'
 :::
 ```
@@ -56,12 +56,11 @@ import remarkInterlinearGloss from "https://esm.sh/remark-interlinear-gloss@1";
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
+<link rel="stylesheet" href="https://esm.sh/remark-interlinear-gloss@1/styles.css">
 <script type="module">
   import remarkInterlinearGloss from "https://esm.sh/remark-interlinear-gloss@1?bundle";
 </script>
 ```
-
-In the browser, use CSS or 
 
 ## Use
 
@@ -174,6 +173,12 @@ This package includes optional base styles. Import them in your project:
 import "remark-interlinear-gloss/styles.css";
 ```
 
+Or with [`esm.sh`][esmsh]:
+
+```html
+<link rel="stylesheet" href="https://esm.sh/remark-interlinear-gloss@1/styles.css" />
+```
+
 Or write your own styles targeting these classes:
 
 - `.gloss` — the outer `<figure>`
@@ -192,7 +197,7 @@ This package exports no identifiers. The default export is `remarkInterlinearGlo
 
 ### `unified().use(remarkDirective).use(remarkInterlinearGloss)`
 
-Add support for interlinear glossing. [`remark-directive`](remark-directive) must be used before `remark-interlinear-gloss`.
+Add support for interlinear glossing. [`remark-directive`][remark-directive] must be used before `remark-interlinear-gloss`.
 
 <!-- omit in toc -->
 ###### Returns
