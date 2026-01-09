@@ -1,8 +1,13 @@
 {
   "name": "remark-interlinear-gloss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interlinear glossing with Markdown using remark-directive",
   "author": "Daniel Huang <99danielh@gmail.com> (https://dan.onl)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubedhuang/remark-interlinear-gloss.git"
+  },
+  "homepage": "https://github.com/cubedhuang/remark-interlinear-gloss#readme",
   "bugs": "https://github.com/cubedhuang/remark-interlinear-gloss/issues",
   "type": "module",
   "exports": {
@@ -13,8 +18,8 @@
     "./styles.css": "./styles/gloss.css"
   },
   "files": [
-    "./dist",
-    "./styles"
+    "dist",
+    "styles"
   ],
   "scripts": {
     "build": "tsc",

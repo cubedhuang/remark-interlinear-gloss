@@ -13,7 +13,7 @@
 :::
 ```
 
-![Rendered interlinear gloss from the Chinese coverb example](https://raw.githubusercontent.com/cubedhuang/remark-interlinear-gloss/main/example.png)
+![Rendered interlinear gloss from the Chinese coverb example](https://raw.githubusercontent.com/cubedhuang/remark-interlinear-gloss/main/examples/chinese.png)
 
 <!-- omit in toc -->
 ## Contents
@@ -141,7 +141,7 @@ console.log(String(file));
 
 When the base styles are imported from `"remark-interlinear-gloss/styles.css"`, the output is as follows:
 
-![Rendered interlinear gloss from the Leipzig glossing rules](https://raw.githubusercontent.com/cubedhuang/remark-interlinear-gloss/main/example.png)
+![Rendered interlinear gloss from the Leipzig glossing rules](https://raw.githubusercontent.com/cubedhuang/remark-interlinear-gloss/main/examples/leipzig.png)
 
 ## Syntax
 
