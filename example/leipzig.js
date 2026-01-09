@@ -12,6 +12,6 @@ const file = await unified()
   .use(remarkGloss)
   .use(remarkRehype)
   .use(rehypeStringify)
-  .process(await read("example.md"));
+  .process(await read("leipzig.md"));
 
 console.log(String(file));

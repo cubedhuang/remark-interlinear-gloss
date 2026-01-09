@@ -5,13 +5,15 @@
 
 ```markdown
 :::gloss
-| Chinese
-你 写 **书**
-/ ní xiě **shū**
-= 2SG write **book**
-| 'You write a **book**.'
+| Chinese coverbs
+我 **坐** 飞机 **从** 上海 **到** 北京 去。
+/ wǒ **zuò** fēijī **cóng** Shànghǎi **dào** Běijīng qù.
+= I **sit** airplace **from** Shanghai **arrive(to)** Beijing go
+| 'I'll go from Shanghai to Beijing by plane.'
 :::
 ```
+
+![Rendered interlinear gloss from the Chinese coverb example](https://raw.githubusercontent.com/cubedhuang/remark-interlinear-gloss/main/example.png)
 
 <!-- omit in toc -->
 ## Contents
@@ -58,6 +60,8 @@ In browsers with [`esm.sh`][esmsh]:
   import remarkInterlinearGloss from "https://esm.sh/remark-interlinear-gloss@1?bundle";
 </script>
 ```
+
+In the browser, use CSS or 
 
 ## Use
 
@@ -137,7 +141,7 @@ console.log(String(file));
 
 When the base styles are imported from `"remark-interlinear-gloss/styles.css"`, the output is as follows:
 
-![Rendered interlinear gloss from the Leipzig glossing rules](example/example.png)
+![Rendered interlinear gloss from the Leipzig glossing rules](https://raw.githubusercontent.com/cubedhuang/remark-interlinear-gloss/main/example.png)
 
 ## Syntax
 
