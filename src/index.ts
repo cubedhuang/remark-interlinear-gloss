@@ -28,7 +28,7 @@ interface Gloss {
   footers: PhrasingContent[][];
 }
 
-export default function remarkGloss() {
+export default function remarkInterlinearGloss() {
   return (tree: Root, file: VFile) => {
     visit(tree, (node) => {
       const directive = node as

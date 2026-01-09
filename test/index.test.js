@@ -8,16 +8,16 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
-import remarkGloss from "../src/index.ts";
+import remarkInterlinearGloss from "../src/index.ts";
 
 const toHtml = unified()
   .use(remarkParse)
   .use(remarkDirective)
-  .use(remarkGloss)
+  .use(remarkInterlinearGloss)
   .use(remarkRehype)
   .use(rehypeStringify);
 
-test("remarkGloss", async (t) => {
+test("remarkInterlinearGloss", async (t) => {
   await t.test("should expose the public api", async () => {
     assert.deepEqual(
       Object.keys(await import("remark-interlinear-gloss")).sort(),
